@@ -1,0 +1,23 @@
+.hero-slider_two_cols {
+  width: 100%;
+  // height: calc(85vh - 103px);
+  overflow: hidden;
+
+  .owl-item {
+    .active {
+      margin-right: 0px !important;
+    }
+  }
+
+  .slide-item {
+    // height: calc(85vh - 103px); // Use the same height as the container
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
