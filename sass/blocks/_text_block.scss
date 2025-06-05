@@ -1,0 +1,14 @@
+.text_block {
+  padding: 35px 0px;
+  .row {
+    justify-content: center;
+
+    .text_block__content-container {
+      @media screen and (max-width: 576px) {
+        p {
+          text-align: left !important;
+        }
+      }
+    }
+  }
+}

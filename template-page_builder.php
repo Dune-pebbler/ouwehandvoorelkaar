@@ -25,6 +25,18 @@ get_header(); ?>
                         <?php get_template_part('template-parts/blocks/text_with_image'); ?>
                 <?php endif; ?>
 
+                <?php if (get_row_layout() === 'text_block'): ?>
+                        <?php get_template_part('template-parts/blocks/text_block'); ?>
+                <?php endif; ?>
+
+                <?php if (get_row_layout() === 'cards_block'): ?>
+                        <?php get_template_part('template-parts/blocks/cards'); ?>
+                <?php endif; ?>
+
+                <?php if (get_row_layout() === 'text_with_slider'): ?>
+                        <?php get_template_part('template-parts/blocks/text_with_slider'); ?>
+                <?php endif; ?>
+
         <?php endwhile; ?>
 <?php endif; ?>
 

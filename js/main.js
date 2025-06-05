@@ -2,6 +2,7 @@ jQuery(document).ready(function () {
   // startOwlSlider();
   setHamburgerActiveToggle();
   initInView(); // Call our inView initialization function
+  initHeroSliderTwoCols();
 });
 jQuery(window).scroll(function () {
   // hideOnScroll();
@@ -232,5 +233,51 @@ function initInView() {
   } else {
     console.error("inView library not loaded");
     fallbackScrollAnimation();
+  }
+}
+function initHeroSliderTwoCols() {
+  const $carousel = jQuery(".hero-slider_two_cols .owl-carousel");
+  const isMobile = window.innerWidth < 768;
+  let direction = "next";
+
+  if ($carousel.length === 0) return; // Safety check
+
+  $carousel.owlCarousel({
+    items: 2,
+    loop: false,
+    autoplay: false,
+    smartSpeed: 800,
+    nav: false,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+    },
+  });
+
+  if (isMobile) {
+    setInterval(function () {
+      const $activeItems = $carousel.find(".owl-item.active");
+      const current = $activeItems.first().index();
+      const total = $carousel.find(".owl-item").length;
+
+      // Decide direction
+      if (current === 0) {
+        direction = "next";
+      } else if (current === total - 1) {
+        direction = "prev";
+      }
+
+      // Trigger next or prev
+      if (direction === "next") {
+        $carousel.trigger("next.owl.carousel");
+      } else {
+        $carousel.trigger("prev.owl.carousel");
+      }
+    }, 5000);
   }
 }

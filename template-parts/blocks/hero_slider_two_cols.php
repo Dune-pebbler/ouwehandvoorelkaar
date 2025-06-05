@@ -1,7 +1,7 @@
 <section class="hero-slider_two_cols">
-    <div class="container">
+    <div class="container hi-tim">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 p-0">
                 <?php if (have_rows('hero_slider')): ?>
                     <div class="owl-carousel owl-theme">
                         <?php while (have_rows('hero_slider')):
@@ -20,25 +20,3 @@
         </div>
     </div>
 </section>
-<script>
-    jQuery(document).ready(function ($) {
-        $('.hero-slider_two_cols .owl-carousel').owlCarousel({
-            items: 2,
-            loop: false,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            smartSpeed: 800,
-            nav: false,
-            dots: false,
-            margin: 15,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                768: {
-                    items: 2
-                }
-            }
-        });
-    });
-</script>
