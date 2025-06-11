@@ -17,18 +17,18 @@ $projects_query = new WP_Query(array(
 ));
 ?>
 
-<section class="text_with_image">
+<section class="text_with_slider">
     <div class="container-fluid">
         <div class="row<?= $reverse_layout ? ' reverse' : '' ?>">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-4">
-                <div class="text_with_image__text-container slide-left-on-scroll">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-3">
+                <div class="text_with_slider__text-container slide-left-on-scroll">
                     <?= $text_block; ?>
                 </div>
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-6 p-0">
-                <div class="text_with_image__image-container slide-right-on-scroll">
+                <div class="text_with_slider__image-container slide-right-on-scroll">
                     <?php if ($projects_query->have_posts()): ?>
                         <div class="owl-carousel projects-carousel">
                             <?php while ($projects_query->have_posts()):
@@ -52,32 +52,3 @@ $projects_query = new WP_Query(array(
         </div>
     </div>
 </section>
-
-
-<script>
-    jQuery(document).ready(function ($) {
-        $('.projects-carousel').owlCarousel({
-            items: 1,
-            loop: true,
-            margin: 0,
-            nav: true,
-            dots: true,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: true,
-            animateOut: 'fadeOut',
-            animateIn: 'fadeIn',
-            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
-            responsive: {
-                0: {
-                    nav: false,
-                    dots: true
-                },
-                768: {
-                    nav: true,
-                    dots: true
-                }
-            }
-        });
-    });
-</script>

@@ -1,14 +1,39 @@
-.footer-nav {
-  ul {
-    list-style: none;
+footer {
+  background-color: #363b44;
+  position: relative;
+  #copyright {
+    position: absolute;
+    right: 10%;
+    top: 60%;
+    color: white;
+
+    @media screen and (max-width: 576px) {
+      top: 78%;
+    }
+  }
+  .footer-main {
+    height: 300px;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding:0;
-    a {
-      text-decoration: none;
-      color: black;
-      font-size: 18px;
+    align-items: center;
+    .footer__image-container {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .content-container {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      height: 100%;
+      p {
+        color: white;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 }

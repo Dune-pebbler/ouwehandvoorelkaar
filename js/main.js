@@ -3,6 +3,7 @@ jQuery(document).ready(function () {
   setHamburgerActiveToggle();
   initInView(); // Call our inView initialization function
   initHeroSliderTwoCols();
+  initProjectsCarousel();
 });
 jQuery(window).scroll(function () {
   // hideOnScroll();
@@ -54,6 +55,34 @@ function startOwlSlider() {
         items: 3,
       },
     },
+  });
+}
+function initProjectsCarousel() {
+  jQuery(".projects-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 0,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    navText: [
+      // Previous
+      `<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 70 70">
+  <g id="Group_82" data-name="Group 82" transform="translate(-1620 -2559)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="35" cy="35" r="35" transform="translate(1620 2559)" fill="#f58220"/>
+    <path id="Path_130" data-name="Path 130" d="M1143.152,3142.543l16.47,16.47-16.47,16.47" transform="translate(2806.387 5753.013) rotate(180)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="6"/>
+  </g>
+</svg>`,
+      // Next
+      `<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 70 70">
+  <g id="Group_83" data-name="Group 83" transform="translate(-1707 -2559)">
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="35" cy="35" r="35" transform="translate(1777 2629) rotate(180)" fill="#f58220"/>
+    <path id="Path_131" data-name="Path 131" d="M1143.152,3142.543l16.47,16.47-16.47,16.47" transform="translate(590.613 -565.013)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="6"/>
+  </g>
+</svg>
+`,
+    ],
   });
 }
 

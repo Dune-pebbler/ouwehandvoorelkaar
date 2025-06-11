@@ -20,7 +20,7 @@
 </head>
 
 <body <?php body_class() ?>>
-  <header style="border-bottom: 1px solid black;">
+  <header>
     <nav>
       <div class="container">
         <div class="row">

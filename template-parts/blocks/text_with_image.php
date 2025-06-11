@@ -4,10 +4,10 @@ $image_block = get_sub_field('image_block');
 $reverse_layout = get_sub_field('reverse_layout');
 ?>
 <section class="text_with_image">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row<?= $reverse_layout ? ' reverse' : '' ?>">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-4">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-3">
                 <div class="text_with_image__text-container slide-left-on-scroll">
                     <?= $text_block; ?>
                 </div>

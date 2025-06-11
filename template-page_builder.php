@@ -37,6 +37,10 @@ get_header(); ?>
                         <?php get_template_part('template-parts/blocks/text_with_slider'); ?>
                 <?php endif; ?>
 
+                <?php if (get_row_layout() === 'help_block'): ?>
+                        <?php get_template_part('template-parts/blocks/help_block'); ?>
+                <?php endif; ?>
+
         <?php endwhile; ?>
 <?php endif; ?>
 

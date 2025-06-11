@@ -484,6 +484,58 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_684951c732ff3": {
+                    "key": "layout_684951c732ff3",
+                    "name": "help_block",
+                    "label": "Hulp blok",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_684951d432ff5",
+                            "label": "linker tekst veld",
+                            "name": "left_text_field",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6849520532ff6",
+                            "label": "rechter tekst veld",
+                            "name": "right_text_field",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -509,5 +561,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1749131316
+    "modified": 1749635900
 }

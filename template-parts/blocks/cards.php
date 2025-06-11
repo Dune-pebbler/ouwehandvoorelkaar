@@ -13,7 +13,7 @@ $cards = get_sub_field('cards_repeater');
                             $icon = $card['icon'];
                             $text = $card['card_text'];
                             ?>
-                            <div class="col-12 col-md-6 col-lg-3">
+                            <div class="col-10 col-md-6 col-lg-3">
                                 <div class="card__container">
 
                                     <?php if ($icon): ?>
