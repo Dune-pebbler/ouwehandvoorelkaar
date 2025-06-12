@@ -19,8 +19,8 @@ $projects_query = new WP_Query(array(
 
 <section class="text_with_slider">
     <div class="container-fluid">
-        <div class="row<?= $reverse_layout ? ' reverse' : '' ?>">
-            <div class="col-lg-2"></div>
+        <div class="row justify-content-center <?= $reverse_layout ? ' reverse' : '' ?>">
+            <div class="col-xl-2"></div>
             <div class="col-lg-3">
                 <div class="text_with_slider__text-container slide-left-on-scroll">
                     <?= $text_block; ?>

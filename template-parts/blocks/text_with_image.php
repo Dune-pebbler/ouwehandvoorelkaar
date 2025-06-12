@@ -5,8 +5,8 @@ $reverse_layout = get_sub_field('reverse_layout');
 ?>
 <section class="text_with_image">
     <div class="container-fluid">
-        <div class="row<?= $reverse_layout ? ' reverse' : '' ?>">
-            <div class="col-lg-2"></div>
+        <div class="row justify-content-center<?= $reverse_layout ? ' reverse' : '' ?>">
+            <div class="col-xl-2"></div>
             <div class="col-lg-3">
                 <div class="text_with_image__text-container slide-left-on-scroll">
                     <?= $text_block; ?>
