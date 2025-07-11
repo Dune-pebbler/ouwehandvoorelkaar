@@ -1158,7 +1158,7 @@ p + .btn, p + .btn-secondary, p + .btn-outline {
   left: 0;
   width: 100%;
   height: 60%;
-  background: url("/wp-content/themes/ouwehandvoorelkaar/images/banner.png") no-repeat center center;
+  background: url("/wp-content/themes/ouwehandvoorelkaar/images/waar-we-ons-voor-inzetten.png") no-repeat center center;
   background-size: cover;
   z-index: -1;
 }
@@ -1232,6 +1232,7 @@ p + .btn, p + .btn-secondary, p + .btn-outline {
 }
 .cards .card__container .card__text {
   color: #363b44;
+  text-align: center;
 }
 
 header {
