@@ -1,6 +1,7 @@
 .cards {
   position: relative;
-  padding: 35px 0;
+  margin-top: 40px;
+  padding: 80px 0;
   z-index: 1;
 
   &::before {
@@ -34,7 +35,6 @@
   }
 
   .row {
-    padding-top: 80px;
     row-gap: 10px;
     justify-content: center;
 
